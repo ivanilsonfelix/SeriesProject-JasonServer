@@ -1,0 +1,18 @@
+{
+  "series": [
+    {
+      "nomeSerie": "braking bad",
+      "numTemporada": "8",
+      "nomeEstudio": "teste",
+      "anoLancamento": 2012,
+      "id": "e1e8"
+    },
+    {
+      "id": "a4a6",
+      "nomeSerie": "theboys",
+      "numTemporada": "4",
+      "anoLancamento": "2000",
+      "nomeEstudio": "teste"
+    }
+  ]
+}
