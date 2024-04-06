@@ -1,27 +1,33 @@
-// primeira etapa =  receber valores
-const nomeSerie = document.getElementById("nomeSerie").value 
-const numTemporada = document.getElementById("numTemporada").value
-const nomeEstudio = document.getElementById("nomeEstudio").value
-const anoLancamento = document.getElementById("anoLancamento").value
+document.getElementById('btnCadastrar').addEventListener('click', async (e) =>{
+  e.preventDefault();
 
-//passar esses valores para um objeto
-const dadosEnviados = {
-    "id": null, //autoincremental
-    "nomeSerie": nomeSerie,
-    "numTemporada": numTemporada,
-    "nomeEstudio": nomeEstudio,
-    "anoLancamento": anoLancamento
+  // url do endpoint da aplicação web api
+  const url = "http://localhost:8080/series"
 
-}
-//realizar a requisição do tipo post
-
-fetch('https://jsonplaceholder.typicode.com/posts', {
-  method: "POST",
-  body: JSON.stringify(dadosEnviados),
-  headers: {"Content-type": "application/json; charset=UTF-8"}
+  //valores que está vindo do front-end
+  const dadosEnviados = {
+    'id': Math.floor(Math.random() * 100),
+    'nomeSerie': document.getElementById('nomeSerie').value,
+    'numTemporada': document.getElementById('numTemporada').value,
+    'nomeEstudio': document.getElementById('nomeEstudio').value,
+    'anoLancamento': document.getElementById('anoLancamento').value
+  }
+  try{
+    await fetch(url, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(dadosEnviados)
+    })
+    const response = await fetch(url)
+    if (response.ok) {
+      alert("A série foi cadastrada com sucesso!")
+    }else{
+      alert("Erro ao cadastrar série. Tente novamente")
+    }
+    document.getElementById('btnCadastrar').removeEventListener('click', arguments.callee)
+  } catch (error){
+    console.log('O consumo do post deu ruim ${error}');
+  }
 })
-.then(response => response.json()) 
-.then(json => console.log(json));
-.catch(err => console.log(err));
-
-

@@ -1,18 +1,81 @@
 {
   "series": [
     {
-      "nomeSerie": "braking bad",
-      "numTemporada": "8",
-      "nomeEstudio": "teste",
-      "anoLancamento": 2012,
-      "id": "e1e8"
-    },
-    {
       "id": "a4a6",
       "nomeSerie": "theboys",
       "numTemporada": "4",
       "anoLancamento": "2000",
       "nomeEstudio": "teste"
+    },
+    {
+      "id": 46,
+      "nomeSerie": "test",
+      "numTemporada": "2",
+      "nomeEstudio": "teste2",
+      "anoLancamento": "2011"
+    },
+    {
+      "id": 54,
+      "nomeSerie": "friends",
+      "numTemporada": "4",
+      "nomeEstudio": "mmm",
+      "anoLancamento": "2023"
+    },
+    {
+      "id": 23,
+      "nomeSerie": "test",
+      "numTemporada": "2",
+      "nomeEstudio": "max",
+      "anoLancamento": "2000"
+    },
+    {
+      "id": 75,
+      "nomeSerie": "",
+      "numTemporada": "",
+      "nomeEstudio": "",
+      "anoLancamento": ""
+    },
+    {
+      "id": 5,
+      "nomeSerie": "braking bad",
+      "numTemporada": "4",
+      "nomeEstudio": "teste",
+      "anoLancamento": "2012"
+    },
+    {
+      "id": 51,
+      "nomeSerie": "braking bad",
+      "numTemporada": "8",
+      "nomeEstudio": "teste",
+      "anoLancamento": "2012"
+    },
+    {
+      "id": 60,
+      "nomeSerie": "test",
+      "numTemporada": "2",
+      "nomeEstudio": "teste2",
+      "anoLancamento": "2011"
+    },
+    {
+      "id": 74,
+      "nomeSerie": "braking bad",
+      "numTemporada": "8",
+      "nomeEstudio": "teste",
+      "anoLancamento": "2012"
+    },
+    {
+      "id": 94,
+      "nomeSerie": "test",
+      "numTemporada": "2",
+      "nomeEstudio": "teste2",
+      "anoLancamento": "2011"
+    },
+    {
+      "id": 63,
+      "nomeSerie": "",
+      "numTemporada": "",
+      "nomeEstudio": "",
+      "anoLancamento": ""
     }
   ]
 }

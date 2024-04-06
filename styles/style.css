@@ -154,6 +154,18 @@ td{
     border-collapse: collapse;
 }
 
+tr>div{
+    
+    display: flex;
+    align-items: center;
+    height: 30px;
+    justify-content: space-between;
+    padding: 5px;
+}
+tr>div>img{
+    cursor: pointer;
+}
+ 
 
 /* segunda opção formatação de tabela */
 /*
